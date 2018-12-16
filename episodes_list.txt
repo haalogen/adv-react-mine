@@ -1,0 +1,135 @@
+Урок 1. Editor Setup and Starter Files Installation 00:09:06
+
+Урок 2. Sick Fits and the Tech Stack Behind It 00:10:31
+
+Урок 3. An Intro to Next.js, Tooling and Routing 00:08:51
+
+Урок 4. Custom _app.js Layout 00:12:26
+
+Урок 5. An Intro to Styled Components 00:11:19
+
+Урок 6. Themes and Layout with Styled Components 00:18:49
+
+Урок 7. Global Styling and Typography with Styled Components 00:10:29
+
+Урок 8. Visualizing Route Changes 00:06:43
+
+Урок 9. Fixing Styled Components Flicker on Server Render 00:04:19
+
+Урок 10. An intro to GraphQL 00:14:13
+
+Урок 11. Getting Setup with Prisma 00:22:56
+
+Урок 12. Getting our GraphQL Yoga Server Running 00:22:33
+
+Урок 13. Our first Query and Mutation 00:11:46
+
+Урок 14. Items Creation and Prisma Yoga Flow 00:26:12
+
+Урок 15. Setting Up Apollo Client with React 00:11:24
+
+Урок 16. React Meets GraphQL 00:25:55
+
+Урок 17. Creating Items with Mutations 00:29:46
+
+Урок 18. Uploading Images 00:11:46
+
+Урок 19. Updating Items with Queries and Mutations 00:25:42
+
+Урок 20. Deleting Items 00:12:58
+
+Урок 21. Displaying Single Items 00:12:34
+
+Урок 22. Pagination 00:15:47
+
+Урок 23. Pagination and Cache Invalidation 00:09:37
+
+Урок 24. User Signup and Permission Flow 00:23:12
+
+Урок 25. User Signup in React 00:12:13
+
+Урок 26. Currently Logged In User with Middlware and Render Props 00:18:45
+
+Урок 27. Sign in Form and Custom Error Handling 00:16:57
+
+Урок 28. Sign Out Button 00:06:22
+
+Урок 29. Backend Password Reset Flow 00:19:59
+
+Урок 30. Frontend Password Reset Flow 00:14:56
+
+Урок 31. Sending Email 00:12:14
+
+Урок 32. Data Relationships 00:05:47
+
+Урок 33. Creating a Gated Sign In Component 00:05:17
+
+Урок 34. Permissions Management 00:22:34
+
+Урок 35. Updating Permissions in Local State 00:12:44
+
+Урок 36. Updating Permissions on the Server 00:17:30
+
+Урок 37. Locking Down DeleteItem Permissions 00:06:38
+
+Урок 38. Creating our cart in React 00:05:30
+
+Урок 39. Apollo Local State Queries and Mutations 00:12:31
+
+Урок 40. Server Side Add To Cart 00:17:05
+
+Урок 41. Displaying Cart Items and Totals 00:20:00
+
+Урок 42. Removing Cart Items 00:10:45
+
+Урок 43. Optimistic Response && Cache Updates with Apollo 00:07:56
+
+Урок 44. Animating our Cart Count Component 00:13:21
+
+Урок 45. Dealing with Deleted Items in CartItems 00:03:01
+
+Урок 46. Cleaning Up This Render Prop Mess 00:06:20
+
+Урок 47. Search Dropdown Autocomplete 00:18:14
+
+Урок 48. Autocomplete with Downshift 00:13:08
+
+Урок 49. Credit Card Processing with Stripe Checkout 00:16:45
+
+Урок 50. Charging Cards on the Server Side 00:17:51
+
+Урок 51. Saving Orders to the Database 00:13:15
+
+Урок 52. Displaying Single Orders 00:17:58
+
+Урок 53. Orders Page 00:14:20
+
+Урок 54. Testing with Jest and Enzyme Introduction 00:07:45
+
+Урок 55. Unit Testing 101 00:16:30
+
+Урок 56. Mocking 101 00:09:47
+
+Урок 57. First Tests and Shallow Rendering 00:14:39
+
+Урок 58. Snapshot Testing 00:15:19
+
+Урок 59. Testing and Mocking Apollo Queries 00:19:41
+
+Урок 60. More Apollo Query Testing 00:20:56
+
+Урок 61. Testing Pagination 00:15:19
+
+Урок 62. Testing Mutations 00:25:47
+
+Урок 63. More Apollo Client Mutation Testing 00:15:21
+
+Урок 64. Testing our Cart 00:25:23
+
+Урок 65. Testing Order Components 00:15:31
+
+Урок 66. Deploying a Prisma Server to Heroku 00:06:50
+
+Урок 67. Deploying Yoga Server to Heroku or Now 00:11:48
+
+Урок 68. Deploying Frontend to Heroku and Now 00:09:43
