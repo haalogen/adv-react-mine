@@ -4,13 +4,13 @@ import Header from './Header'
 import Meta from './Meta'
 
 const theme = {
-  red: '#FF0000',
   black: '#393939',
+  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
   grey: '#3A3A3A',
   lightgrey: '#E1E1E1',
-  offWhite: '#EDEDED',
   maxWidth: '1000px',
-  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
+  offWhite: '#EDEDED',
+  red: '#FF0000',
 }
 
 const StyledPage = styled.div`
@@ -19,10 +19,39 @@ const StyledPage = styled.div`
 `
 
 const Inner = styled.div`
+  border: 1px solid black;
   margin: 0 auto;
   max-width: ${props => props.theme.maxWidth};
   padding: 2rem;
-  border: 1px solid black;
+`
+
+// Global CSS. Be sure to write selectors explicitly!
+injectGlobal`
+  @font-face {
+    font-family: 'radnika_next';
+    font-style: normal;
+    font-weight: normal;
+    format('webfont2');
+    src: url('/static/radnikanext-medium-webfont.woff2');
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 10px; /* 1 rem */
+  }
+  *, *:after, *:before {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: 'radnika_next';
+    font-size: 1.5rem;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: ${theme.black};
+    text-decoration: none;
+  }
 `
 
 class Page extends React.Component {
