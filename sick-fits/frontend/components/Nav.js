@@ -10,8 +10,8 @@ const Nav = (props) => (
     <Link href="/sell">
       <a>Sell</a>
     </Link>
-    <Link href="/signp">
-      <a>Signp</a>
+    <Link href="/signup">
+      <a>Signup</a>
     </Link>
     <Link href="/orders">
       <a>Orders</a>

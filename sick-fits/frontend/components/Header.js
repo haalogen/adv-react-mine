@@ -1,7 +1,20 @@
 import React from 'react'
 import Link from 'next/link'
+import Router from 'next/router'
+import NProgress from 'nprogress'
 import styled from 'styled-components'
 import Nav from './Nav'
+
+// Listen for next/router events, launch/stop progress bar
+Router.onRouteChangeStart = () => {
+  NProgress.start()
+}
+Router.onRouteChangeComplete = () => {
+  NProgress.done()
+}
+Router.onRouteChangeError = () => {
+  NProgress.done()
+}
 
 const StyledLogo = styled.h1`
   font-size: 4rem;
