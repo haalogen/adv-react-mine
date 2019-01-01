@@ -1,5 +1,20 @@
+# Prisma data model/schema. It is the API for GraphQL Yoga to work with DB
+
 type User {
   id: ID! @unique
   email: String!
   name: String!
+}
+
+type Item {
+  id: ID! @unique
+  description: String!
+  price: Int!
+  title: String!
+  # "DateTime" type is exposed to us via Prisma. These are created automatically
+  # createdAt: DateTime!
+  # updatedAt: DateTime!
+  # user: User!
+  image: String
+  largeImage: String
 }

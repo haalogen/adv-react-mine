@@ -1,11 +1,12 @@
-type Dog {
-  name: String!
-}
+# Schema for GraphQL Yoga. It is the public-facing API for frontend
+
+# Import all types from Prisma schema
+# import * from './generated/prisma.graphql'
 
 type Mutation {
-  createDog(name: String!): Dog
+  createItem(title: String, description: String, price: Int, image: String, largeImage: String): Item!
 }
 
 type Query {
-  dogs: [Dog]!
+  items: [Item]!
 }
