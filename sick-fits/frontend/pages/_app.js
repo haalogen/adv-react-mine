@@ -8,6 +8,7 @@ class MyApp extends App {
   /**
    * Next.js special lifecycle method. Runs before first render() runs.
    * Initializes the props.
+   * @return -- Initial props
    */
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {}
