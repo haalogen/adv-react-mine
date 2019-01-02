@@ -1,8 +1,9 @@
-node_modules/
-.DS_Store
-*.log
-haters/
 .next/
 .build/
+haters/
+img/
+node_modules/
+*.log
+.DS_Store
 layout.md
 variables.env

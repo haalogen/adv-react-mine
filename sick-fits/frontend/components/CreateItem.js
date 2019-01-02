@@ -45,6 +45,26 @@ class CreateItem extends React.Component {
     })
   }
 
+  uploadFile = async (e) => {
+    console.log('Uploading', e.target);
+    const files = e.target.files
+
+    const data = new FormData()
+    data.append('file', files[0])
+    data.append('upload_preset', 'sickfits') // Needed by Cloudinary
+
+    const res = await fetch('https://api.cloudinary.com/v1_1/dw2qd4eel/image/upload', {
+      method: 'POST',
+      body: data,
+    })
+    const file = await res.json()
+    console.log(file);
+    this.setState({
+      image: file.secure_url,
+      largeImage: file.eager[0].secure_url,
+    })
+  }
+
   render() {
     const { item } = this.props;
     return (
@@ -57,10 +77,16 @@ class CreateItem extends React.Component {
             Router.push({
               pathname: '/item',
               query: { id: res.data.createItem.id }
-            })// Bring them to the single item page
+            }) // Bring them to the single item page
           }}>
             <ErrorMessage error={error}/>
             <fieldset disabled={loading} aria-busy={loading}>
+              <label htmlFor="file">
+                Image
+                <input required type="file" name="file" id="file" placeholder="Upload an image" onChange={this.uploadFile}/>
+                {this.state.image && <img src={this.state.image} width="200" alt="Upload Preview"/>}
+              </label>
+
               <label htmlFor="title">
                 Title
                 <input required type="text" name="title" id="title" placeholder="Title" value={this.state.title} onChange={this.handleChange}/>
