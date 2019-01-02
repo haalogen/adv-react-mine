@@ -49,4 +49,5 @@ class Items extends React.Component {
   }
 }
 
+export { QUERY_ALL_ITEMS }
 export default Items
