@@ -13,7 +13,7 @@ const theme = {
   red: '#FF0000',
 }
 
-const StyledPage = styled.div`
+const StylesPage = styled.div`
   background: white;
   color: ${props => props.theme.black};
 `
@@ -58,11 +58,11 @@ class Page extends React.Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <StyledPage>
+        <StylesPage>
           <Meta />
           <Header />
           <Inner>{this.props.children}</Inner>
-        </StyledPage>
+        </StylesPage>
       </ThemeProvider>
     )
   }
