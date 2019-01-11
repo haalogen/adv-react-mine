@@ -3,7 +3,8 @@ const { forwardTo } = require('prisma-binding')
 
 const Query = {
   // Don't add any custom logic (auth, charge card, send email, etc).
-  // Pass the query through to database
+  // Forward the query directly to the database
+  item: forwardTo('db'),
   items: forwardTo('db'),
 
   // async items(parent, args, ctx, info) {
