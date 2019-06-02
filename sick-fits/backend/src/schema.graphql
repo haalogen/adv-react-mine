@@ -12,4 +12,5 @@ type Mutation {
 type Query {
   item(where: ItemWhereUniqueInput!): Item
   items: [Item]!
+  itemsConnection(where: ItemWhereUniqueInput): ItemConnection!
 }
